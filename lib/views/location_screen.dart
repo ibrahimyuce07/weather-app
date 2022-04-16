@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../constants.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-
+import 'package:auto_size_text/auto_size_text.dart';
 class LocationScreen extends StatefulWidget {
   const LocationScreen({Key? key, this.locationWeather}) : super(key: key);
 
@@ -135,13 +135,13 @@ class _LocationScreenState extends State<LocationScreen> {
                   ],
                 ),
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(30, 2, 2, 2),
+                  padding: const EdgeInsets.fromLTRB(10, 2, 2, 2),
                   child: Row(
 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Column(
                         children: <Widget>[
-                          Text(
+                          AutoSizeText(
                             '${temperature}°',
                             style: kTempTextStyle,
                           ),

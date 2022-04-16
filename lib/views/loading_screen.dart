@@ -38,8 +38,6 @@ class _LoadingScreenState extends State<LoadingScreen> {
     await locationService.getCurrentLocation();
     latitude = locationService.latitude;
     longitude = locationService.longitude;
-    latitude = 40.807457;
-    longitude = 29.432911;
     NetworkHelper networkHelper = NetworkHelper(
         'http://api.openweathermap.org/data/2.5/weather?lat=$latitude&lon=$longitude&appid=$weatherAPIKey&units=metric&lang=$lang');
 
